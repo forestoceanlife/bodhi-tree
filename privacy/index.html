@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Bodhi Tree</title>
+  <meta name="description" content="Bodhi Tree does not collect personal data. Everything you write stays on your device or in your own iCloud account." />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../"><span class="leaf">☸</span> Bodhi Tree</a>
+      <nav class="site-nav">
+        <a href="../privacy/" class="active">Privacy</a>
+        <a href="../support/">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="meta"><strong>Effective date:</strong> May 8, 2026 &nbsp;·&nbsp; App: Bodhi Tree (iOS) &nbsp;·&nbsp; Publisher: Bodhi Tree &nbsp;·&nbsp; Contact: <a href="mailto:support@bodhitree.app">support@bodhitree.app</a></p>
+
+    <p>This is the Privacy Policy for the Bodhi Tree iOS application ("Bodhi Tree", "the app", "we", "us"). It describes what information the app handles, how it is used, and the choices you have. We have written this policy in plain language because we believe a privacy policy that you cannot read is not really a privacy policy.</p>
+
+    <h2>The short version</h2>
+    <p>Bodhi Tree does not collect personal data. The app has no user accounts. It contains no third-party analytics, advertising SDKs, or tracking code. Everything you do inside the app — your reflections, bookmarks, journal entries, meditation history, and settings — stays on your device unless you explicitly turn on iCloud sync, in which case it is mirrored to your own personal iCloud key-value store managed by Apple. We never receive a copy.</p>
+    <p>If you want, you can stop reading here. The rest of this document is the longer version.</p>
+
+    <h2>Information we do not collect</h2>
+    <p>We want to be specific about this because most apps that say "we don't collect personal data" still do. Bodhi Tree does not collect:</p>
+    <ul>
+      <li>Your name, email address, phone number, or any other contact information</li>
+      <li>Your physical location, IP address, or device identifiers</li>
+      <li>A device advertising ID (IDFA)</li>
+      <li>Behavioral analytics — what screens you visit, how long you spend, what you tap</li>
+      <li>Crash reports beyond what Apple itself collects if you have opted in to "Share with App Developers" in iOS Settings</li>
+      <li>Any content of your reflections, journal entries, bookmarks, or meditation history</li>
+    </ul>
+    <p>We do not have a server that receives your data because the app does not send your data to a server.</p>
+
+    <h2>Information stored on your device</h2>
+    <p>The app stores the following on your device using Apple's standard <code>UserDefaults</code> and a bundled SQLite database:</p>
+    <ul>
+      <li>Your selected language preference and Buddhist tradition(s)</li>
+      <li>Your meditation timer settings, bell choices, and session history</li>
+      <li>Your bookmarks and bookmark collections</li>
+      <li>Your journal entries and end-of-day reflections</li>
+      <li>Your daily-practice items and progress</li>
+      <li>Your scripture reading progress</li>
+      <li>Your subscription state cached from Apple's StoreKit</li>
+      <li>Your notification preferences (which bells are on, what time)</li>
+    </ul>
+    <p>This data is yours. It is stored in the app's sandbox on your device and is included in your standard iOS backup if you have iOS backups enabled. Deleting the app removes this data from the device.</p>
+
+    <h2>Optional iCloud sync</h2>
+    <p>You can turn on "Sync across your devices" in the You tab. When enabled:</p>
+    <ul>
+      <li>A small allowlist of the items above (reflections, bookmarks, meditation log, scripture progress) is mirrored to <strong>your personal iCloud key-value store</strong> using Apple's <code>NSUbiquitousKeyValueStore</code> API.</li>
+      <li>This data goes to <strong>your own iCloud account</strong>, not to a server we operate. We have no access to it.</li>
+      <li>Other devices signed in to the same iCloud account that have Bodhi Tree installed and the toggle on will read the same data.</li>
+      <li>Subscription state and ephemeral UI state are not synced.</li>
+    </ul>
+    <p>You can turn this off at any time from inside the app. Existing iCloud data will remain in your iCloud key-value store until iOS removes it according to Apple's iCloud rules.</p>
+
+    <h2>Optional HealthKit integration</h2>
+    <p>If you grant permission, Bodhi Tree writes completed meditation sessions to Apple Health as <strong>Mindful Minutes</strong> (<code>HKCategoryTypeIdentifierMindfulSession</code>).</p>
+    <ul>
+      <li>The app <strong>only writes</strong> to HealthKit. It never reads any health data from you.</li>
+      <li>HealthKit data is managed by Apple and stored on your device. We have no access to it.</li>
+      <li>You can revoke this permission at any time in the iOS Settings → Health → Data Access &amp; Devices.</li>
+    </ul>
+
+    <h2>Notifications</h2>
+    <p>If you grant permission, the app schedules <strong>local</strong> notifications:</p>
+    <ul>
+      <li>A morning teaching, midday "Bell of Mindfulness", and evening reflection</li>
+      <li>One-time alerts for upcoming Buddhist observances (e.g., Vesak, Bodhi Day, Ulambana) within the traditions you have selected</li>
+    </ul>
+    <p>These are scheduled by <code>UNUserNotificationCenter</code> on your device. They do not involve a remote push server. Bodhi Tree does not have a remote-push capability or token.</p>
+
+    <h2>Subscriptions and purchases</h2>
+    <p>Premium is offered through Apple's StoreKit 2:</p>
+    <ul>
+      <li>Purchases are handled entirely by Apple. We do not see your payment information, your Apple ID, or your billing address.</li>
+      <li>Apple sends us aggregated, anonymized payout reports as part of the App Store Connect dashboard, the same as for any paid app.</li>
+      <li>We use StoreKit's <code>Transaction.currentEntitlements</code> API to know whether your account has an active Bodhi Tree Premium subscription. Nothing about that check is sent to us.</li>
+    </ul>
+    <p>You can manage or cancel your subscription anytime in iOS <strong>Settings → [your name] → Subscriptions</strong>, or by tapping "Manage Subscription" inside the app.</p>
+    <p>A 7-day free trial is offered to new subscribers. If you cancel before the trial ends, you are not charged.</p>
+    <p>The "Dana scholarship" toggle in the app grants a local premium entitlement without a purchase. It is stored only on your device and we do not know who has activated it.</p>
+
+    <h2>Network use</h2>
+    <p>The Bodhi Tree app itself makes no network requests. The only outbound traffic occurs when you explicitly tap a chant-reference link inside a sutra or mantra page; that link opens in Safari (or your default browser), at which point your browser's privacy policy applies, not ours.</p>
+
+    <h2>Children</h2>
+    <p>Bodhi Tree is rated 4+ and is suitable for children, but it is not directed at children under 13 and we do not knowingly collect personal information from children under 13. Because the app collects no personal information, it complies with COPPA, the GDPR-K, and similar regimes by default.</p>
+
+    <h2>Your rights under GDPR, CCPA, and similar laws</h2>
+    <p>Because we do not hold a copy of your personal data, requests for access, deletion, portability, or correction are answered the same way: we have nothing to access, delete, port, or correct on a server. The data is on your device and you can manage or delete it directly inside the app, or by deleting the app, or by turning iCloud sync off.</p>
+    <p>You retain the right to withdraw consent for any optional permission (notifications, HealthKit, iCloud sync) at any time, with no effect on the rest of the app's functionality.</p>
+
+    <h2>Third-party services</h2>
+    <p>The app uses <strong>GRDB.swift</strong> (an open-source SQLite library) for the bundled scripture database. GRDB runs locally inside the app process and does not contact a server.</p>
+    <p>The app does not embed any other third-party SDK — no Firebase, no Crashlytics, no Sentry, no Mixpanel, no Amplitude, no Segment, no Facebook SDK, no advertising SDK.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we ever change what data the app handles, we will update this policy and bump the effective date at the top. Material changes will also be summarized inside the app's "What's New" before the change takes effect. We will not retroactively reduce the privacy of data already collected.</p>
+
+    <h2>Contact</h2>
+    <p>Questions, concerns, or a request? Write to <a href="mailto:support@bodhitree.app">support@bodhitree.app</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>© 2026 Bodhi Tree</span>
+      <span>
+        <a href="../privacy/">Privacy</a> &nbsp;·&nbsp;
+        <a href="../support/">Support</a> &nbsp;·&nbsp;
+        <a href="mailto:support@bodhitree.app">Contact</a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
