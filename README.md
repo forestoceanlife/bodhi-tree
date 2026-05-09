@@ -28,19 +28,14 @@ Or just double-click `index.html`.
 
 ## Deploy on GitHub Pages
 
-The recommended setup is a project repo (`forestoceanlife/bodhi-tree`) deployed from the `main` branch:
+The recommended setup is a project repo (`forestoceanlife/bodhi-tree`) deployed from the `main` branch. This folder already has its own local git repository; see `PUBLISH.md` for the safest current publishing steps.
 
 ```bash
 cd bodhitree-website
 
-# Initialize a fresh repo (if not already done)
-git init
+git remote add origin https://github.com/forestoceanlife/bodhi-tree.git
 git add .
-git commit -m "Initial public site: privacy + support"
-git branch -M main
-
-# Create the repo on github.com/forestoceanlife/bodhi-tree first, then:
-git remote add origin git@github.com:forestoceanlife/bodhi-tree.git
+git commit -m "Update privacy and support pages"
 git push -u origin main
 ```
 

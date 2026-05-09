@@ -4,59 +4,69 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bodhi Tree — A quiet place for practice</title>
-  <meta name="description" content="Bodhi Tree is a Buddhist study and meditation app. No accounts, no tracking — just the sutras, a meditation timer, and a daily teaching." />
+  <meta name="description" content="Bodhi Tree is a Buddhist study and meditation app for iPhone. No accounts, no tracking, with public privacy and support pages for App Store review." />
+  <link rel="canonical" href="https://forestoceanlife.github.io/bodhi-tree/" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
   <header class="site-header">
     <div class="site-header-inner">
-      <a class="brand" href="./"><span class="leaf">☸</span> Bodhi Tree</a>
-      <nav class="site-nav">
+      <a class="brand" href="./" aria-label="Bodhi Tree home"><span class="brand-mark">☸</span> Bodhi Tree</a>
+      <nav class="site-nav" aria-label="Primary">
         <a href="./privacy/">Privacy</a>
         <a href="./support/">Support</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <span class="leaf-large">☸</span>
-      <h1>A quiet place for practice.</h1>
-      <p class="lede">Bodhi Tree is a Buddhist study and meditation app for iPhone. A daily teaching, a meditation timer, and the great sutras — without accounts, without tracking, without a feed.</p>
-      <div class="cta-row">
-        <a href="./privacy/">Privacy Policy</a>
-        <a href="./support/" class="secondary">Support</a>
+  <main id="content">
+    <section class="hero" aria-labelledby="home-title">
+      <span class="hero-mark" aria-hidden="true">☸</span>
+      <p class="eyebrow">Bodhi Tree for iOS</p>
+      <h1 id="home-title">A quiet place for Buddhist practice.</h1>
+      <p class="lede">Bodhi Tree brings together a daily teaching, a meditation timer, a private journal, and a sutra library on iPhone. No accounts. No tracking. No feed.</p>
+      <div class="support-actions">
+        <a class="button-link primary" href="./privacy/">Privacy Policy</a>
+        <a class="button-link" href="./support/">Support</a>
       </div>
     </section>
 
     <hr />
 
-    <h2>What's inside</h2>
-    <p>Designed for newcomers and longtime practitioners across Theravada, Zen, Tibetan, Pure Land, and broader Mahayana traditions. Available in English and Traditional Chinese.</p>
+    <section aria-labelledby="inside-title">
+      <h2 id="inside-title">What Is Inside</h2>
+      <p>Designed for newcomers and longtime practitioners across Theravada, Zen, Tibetan, Pure Land, and broader Mahayana traditions. Available in English and Traditional Chinese.</p>
 
-    <ul>
-      <li><strong>Today</strong> — a daily teaching chosen for the season and your tradition.</li>
-      <li><strong>Sutras</strong> — a searchable library including the Heart Sutra, Diamond Sutra, Dhammapada, and key suttas from the Pali Canon.</li>
-      <li><strong>Meditate</strong> — a clean timer with three tuned bells, an optional warm-up, interval bells, and a breath ring. Lotus Breath and Loving-Kindness practices included.</li>
-      <li><strong>Journal</strong> — a private, on-device space for end-of-session reflections.</li>
-      <li><strong>Mantras &amp; Glossary</strong> — recorded mantras with transliteration, plus concise Pali / Sanskrit / Chinese definitions.</li>
-      <li><strong>Buddhist Calendar</strong> — Vesak, Bodhi Day, Ulambana, with optional gentle alerts.</li>
-    </ul>
+      <ul class="feature-list">
+        <li><strong>Today</strong><br />A daily teaching chosen for the season and your tradition.</li>
+        <li><strong>Sutras</strong><br />A searchable library including the Heart Sutra, Diamond Sutra, Dhammapada, and key suttas from the Pali Canon.</li>
+        <li><strong>Meditate</strong><br />A clean timer with tuned bells, optional warm-up, interval bells, and a breath ring.</li>
+        <li><strong>Journal</strong><br />A private, on-device space for end-of-session reflections.</li>
+        <li><strong>Mantras and Glossary</strong><br />Mantras with transliteration, plus concise Pali, Sanskrit, and Chinese definitions.</li>
+        <li><strong>Buddhist Calendar</strong><br />Vesak, Bodhi Day, Ulambana, and optional gentle observance reminders.</li>
+      </ul>
+    </section>
 
-    <h2>Privacy by design</h2>
-    <p>Bodhi Tree ships no third-party analytics, no advertising SDKs, and no trackers. Everything you write stays on your device, or — if you opt in — in your personal iCloud key-value store. Nothing is sent to a server we operate, because there isn't one.</p>
-    <p><a href="./privacy/">Read the full privacy policy →</a></p>
+    <section aria-labelledby="privacy-title">
+      <h2 id="privacy-title">Privacy by Design</h2>
+      <p>Bodhi Tree ships no third-party analytics, advertising SDKs, or trackers. Practice data stays on your device unless you opt in to iCloud sync through your own Apple account.</p>
+      <p><a href="./privacy/">Read the full privacy policy</a></p>
+    </section>
 
-    <h2>Need help?</h2>
-    <p>Email <a href="mailto:support@bodhitree.app">support@bodhitree.app</a>, or read the <a href="./support/">FAQ</a> — restoring purchases, cancelling, switching language, HealthKit and notifications, and more.</p>
+    <section aria-labelledby="support-title">
+      <h2 id="support-title">Need Help?</h2>
+      <p>Email <a href="mailto:support@bodhitree.app">support@bodhitree.app</a>, or read the <a href="./support/">support FAQ</a> for help with purchases, cancellations, language settings, HealthKit, notifications, iCloud sync, and privacy questions.</p>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="site-footer-inner">
       <span>© 2026 Bodhi Tree</span>
       <span>
-        <a href="./privacy/">Privacy</a> &nbsp;·&nbsp;
-        <a href="./support/">Support</a> &nbsp;·&nbsp;
+        <a href="./privacy/">Privacy</a> ·
+        <a href="./support/">Support</a> ·
         <a href="mailto:support@bodhitree.app">Contact</a>
       </span>
     </div>

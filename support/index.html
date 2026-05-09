@@ -4,126 +4,134 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Support — Bodhi Tree</title>
-  <meta name="description" content="Bodhi Tree support — restore purchases, cancel a subscription, manage HealthKit and notifications, switch language, contact a real person." />
+  <meta name="description" content="Support for Bodhi Tree for iOS: contact support, restore purchases, cancel subscriptions, troubleshoot HealthKit, notifications, iCloud sync, and privacy questions." />
+  <link rel="canonical" href="https://forestoceanlife.github.io/bodhi-tree/support/" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
   <header class="site-header">
     <div class="site-header-inner">
-      <a class="brand" href="../"><span class="leaf">☸</span> Bodhi Tree</a>
-      <nav class="site-nav">
+      <a class="brand" href="../" aria-label="Bodhi Tree home"><span class="brand-mark">☸</span> Bodhi Tree</a>
+      <nav class="site-nav" aria-label="Primary">
         <a href="../privacy/">Privacy</a>
-        <a href="../support/" class="active">Support</a>
+        <a href="../support/" class="active" aria-current="page">Support</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <h1>Support</h1>
-    <p class="lede">Hello, and thank you for using Bodhi Tree. Most questions are answered below; if yours isn't, write to <a href="mailto:support@bodhitree.app">support@bodhitree.app</a> and a real person will reply within a few days.</p>
+  <main id="content">
+    <section class="page-hero" aria-labelledby="support-title">
+      <p class="eyebrow">Bodhi Tree for iOS</p>
+      <h1 id="support-title">Support</h1>
+      <p class="lede">Need help with Bodhi Tree? Email support, restore a purchase, cancel a subscription, or troubleshoot iCloud sync, Apple Health, notifications, and app settings.</p>
+    </section>
 
-    <h2>Contact</h2>
-    <ul>
-      <li>Email: <a href="mailto:support@bodhitree.app"><strong>support@bodhitree.app</strong></a></li>
-      <li>Replies usually come within 2–3 business days.</li>
-      <li>Please include your iOS version (Settings → General → About → Software Version) and the app version (You tab → About) so we can help faster.</li>
-    </ul>
+    <section class="contact-card" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact Support</h2>
+      <p>Email <a href="mailto:support@bodhitree.app"><strong>support@bodhitree.app</strong></a>. A real person reads support mail, and replies usually arrive within 2-3 business days.</p>
+      <p>For faster help, include your iOS version, device model, Bodhi Tree app version, and a short description of what happened. Screenshots are welcome, but please avoid sending private reflections or journal text unless it is necessary for the issue.</p>
+      <div class="support-actions">
+        <a class="button-link primary" href="mailto:support@bodhitree.app?subject=Bodhi%20Tree%20Support">Email Support</a>
+        <a class="button-link" href="../privacy/">Read Privacy Policy</a>
+      </div>
+    </section>
 
-    <h2>Frequently asked questions</h2>
+    <nav class="toc" aria-label="Support topics">
+      <strong>Common Questions</strong>
+      <ol>
+        <li><a href="#restore">Restore purchases</a></li>
+        <li><a href="#cancel">Cancel subscription</a></li>
+        <li><a href="#refunds">Refunds and billing</a></li>
+        <li><a href="#healthkit">Apple Health</a></li>
+        <li><a href="#notifications">Notifications</a></li>
+        <li><a href="#icloud">iCloud sync</a></li>
+        <li><a href="#delete-data">Delete data</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+      </ol>
+    </nav>
 
-    <h3>How do I restore a previous purchase on a new device?</h3>
-    <p>Sign in to the new device with the same Apple ID you used to subscribe, install Bodhi Tree, and go to the <strong>You</strong> tab → <strong>Premium</strong> → <strong>Already subscribed? Restore purchases</strong>. Apple will return your active entitlement in a few seconds.</p>
+    <section class="question-list" aria-label="Frequently asked questions">
+      <h2>Frequently Asked Questions</h2>
 
-    <h3>How do I cancel my subscription?</h3>
-    <p>Go to iOS <strong>Settings → [your name] → Subscriptions → Bodhi Tree → Cancel Subscription</strong>. You can also tap "Manage Subscription" inside the app, which deep-links to the same screen. Cancelling stops the next renewal but you keep access until the end of the period you've already paid for.</p>
-    <p>If you cancel before the 7-day free trial ends, you are not charged.</p>
+      <h3 id="restore">How do I restore a previous purchase on a new device?</h3>
+      <p>Sign in to the new device with the same Apple ID you used to subscribe, install Bodhi Tree, and open <strong>You → Premium → Restore purchases</strong>. Apple will return any active entitlement for that Apple ID.</p>
 
-    <h3>I was charged twice / charged after cancelling — what do I do?</h3>
-    <p>Apple, not Bodhi Tree, processes all subscription billing. Apple is the only party that can issue a refund. Visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in with your Apple ID, find the Bodhi Tree purchase, and request a refund. If Apple's automated flow doesn't help, reply to your App Store receipt email — that opens a support thread with Apple. We unfortunately cannot refund payments on Apple's behalf.</p>
+      <h3 id="cancel">How do I cancel my subscription?</h3>
+      <p>Open iOS <strong>Settings → [your name] → Subscriptions → Bodhi Tree → Cancel Subscription</strong>. You can also tap <strong>Manage Subscription</strong> inside Bodhi Tree, which opens Apple's subscription management sheet.</p>
+      <p>Cancellation stops the next renewal. You keep access until the end of the period you already paid for. If you cancel before the 7-day free trial ends, Apple does not charge you.</p>
 
-    <h3>How do I switch the app between English and Traditional Chinese?</h3>
-    <p>Inside Bodhi Tree: <strong>You → Settings → Language</strong>. Or in iOS: <strong>Settings → Bodhi Tree → Language</strong>.</p>
+      <h3 id="refunds">I was charged twice or charged after cancelling. What should I do?</h3>
+      <p>Apple processes App Store billing and refunds. Visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in with your Apple ID, choose the Bodhi Tree purchase, and request a refund. If the automated flow does not solve it, reply to your App Store receipt email to contact Apple Support.</p>
+      <p>We can help explain what the app shows, but we cannot issue refunds or change Apple billing records ourselves.</p>
 
-    <h3>My meditation sessions aren't showing up in Apple Health</h3>
-    <p>Bodhi Tree only writes a Mindful Session if you've granted permission. To check or change this:</p>
-    <ol>
-      <li>Open <strong>iOS Settings → Health → Data Access &amp; Devices → Bodhi Tree</strong>.</li>
-      <li>Make sure <strong>Mindful Sessions</strong> is turned on under "Allow Bodhi Tree to write data".</li>
-      <li>Complete a session of at least one minute. The session appears in Apple Health → Browse → Mindfulness within a few seconds.</li>
-    </ol>
-    <p>Bodhi Tree never reads from Apple Health and only ever writes Mindful Minutes for sessions you complete inside the app.</p>
+      <h3 id="language">How do I switch the app between English and Traditional Chinese?</h3>
+      <p>Inside Bodhi Tree, open <strong>You → Language</strong>. You can also use iOS <strong>Settings → Bodhi Tree → Language</strong> if your iPhone shows per-app language settings.</p>
 
-    <h3>Notifications stopped working</h3>
-    <ol>
-      <li>Open <strong>iOS Settings → Notifications → Bodhi Tree</strong> and confirm "Allow Notifications" is on.</li>
-      <li>Inside Bodhi Tree, go to <strong>You → Reminders</strong> and check that the bells you want are switched on.</li>
-      <li>Notifications are scheduled locally by iOS — if your iPhone is in <strong>Focus</strong> or <strong>Sleep</strong> mode, scheduled bells may be delivered silently or held until the Focus ends.</li>
-    </ol>
+      <h3 id="healthkit">My meditation sessions are not showing up in Apple Health.</h3>
+      <p>Bodhi Tree only writes Mindful Minutes if you have granted permission. To check:</p>
+      <ol>
+        <li>Open <strong>iOS Settings → Health → Data Access &amp; Devices → Bodhi Tree</strong>.</li>
+        <li>Confirm that <strong>Mindful Sessions</strong> is enabled under write permissions.</li>
+        <li>Complete a meditation session of at least one minute, then check Apple Health under Browse → Mindfulness.</li>
+      </ol>
+      <p>Bodhi Tree does not read health data from Apple Health.</p>
 
-    <h3>iCloud sync isn't working</h3>
-    <ol>
-      <li>Make sure you're signed in to iCloud on every device (<strong>iOS Settings → [your name] → iCloud</strong>).</li>
-      <li>Inside Bodhi Tree, <strong>You → Sync across devices</strong> must be on for each device.</li>
-      <li>iCloud key-value sync can take a few minutes to propagate. Closing and reopening the app, or backgrounding for ~60 seconds, usually triggers a sync.</li>
-      <li>If a device can't reach iCloud (no Wi-Fi, signed-out account), Bodhi Tree continues to work normally with on-device data and will sync the next time iCloud is reachable.</li>
-    </ol>
+      <h3 id="notifications">Notifications stopped working.</h3>
+      <ol>
+        <li>Open <strong>iOS Settings → Notifications → Bodhi Tree</strong> and confirm notifications are allowed.</li>
+        <li>Inside Bodhi Tree, open <strong>You → Notifications</strong> and make sure the reminders you want are enabled.</li>
+        <li>Check whether Focus, Sleep, Low Power Mode, or Scheduled Summary is delaying alerts.</li>
+      </ol>
+      <p>All Bodhi Tree reminders are local notifications scheduled on your device. The app does not use remote push notifications.</p>
 
-    <h3>How does the free tier compare to Premium?</h3>
-    <p>The free tier includes:</p>
-    <ul>
-      <li>The daily teaching</li>
-      <li>A meditation timer with three tuned bells (a singing bowl, a temple bell, and a zen bowl) and an optional warm-up</li>
-      <li>A starter selection of sutras</li>
-      <li>The Buddhist calendar with observance alerts</li>
-      <li>Up to 20 bookmarks</li>
-      <li>Bodhi Tree widgets</li>
-    </ul>
-    <p>Premium adds:</p>
-    <ul>
-      <li>The full sutra library</li>
-      <li>Advanced study tools</li>
-      <li>Ambient meditation sounds and interval bells</li>
-      <li>Unlimited bookmarks</li>
-      <li>Journal history with full-text search and customization</li>
-      <li>Personalized teaching selection</li>
-      <li>Practice statistics over time</li>
-    </ul>
-    <p>Premium is <strong>$6.99/month</strong> or <strong>$39.99/year</strong>, with a <strong>7-day free trial</strong> for new subscribers. You can cancel at any time.</p>
+      <h3 id="icloud">iCloud sync is not working.</h3>
+      <ol>
+        <li>Make sure you are signed in to iCloud on each device.</li>
+        <li>Inside Bodhi Tree, turn on <strong>Sync across your devices</strong> on each device you want to keep in sync.</li>
+        <li>Leave the app open briefly, then background and reopen it. Apple's iCloud key-value sync can take a few minutes.</li>
+        <li>If a device is offline or signed out of iCloud, Bodhi Tree keeps working locally and syncs again when iCloud is available.</li>
+      </ol>
+      <p>If sync still does not work after several minutes on a good connection, email support with the device models and iOS versions involved.</p>
 
-    <h3>What is the "Dana scholarship"?</h3>
-    <p>Dana is the Buddhist practice of generosity. If cost is a barrier, you can request a free one-year Premium scholarship from inside the app — no questions asked. Open <strong>You → Premium → Receive Dana</strong> and follow the prompts. The grant is local to your device.</p>
+      <h3 id="premium">What is included in Premium?</h3>
+      <p>The free tier includes the daily teaching, meditation timer, starter sutra selection, Buddhist calendar, widgets, and up to 20 bookmarks. Premium adds the full sutra library, advanced study tools, ambient meditation sounds, interval bells, unlimited bookmarks, journal history, personalized teaching selection, and practice statistics over time.</p>
+      <p>Premium is offered at <strong>$6.99/month</strong> or <strong>$39.99/year</strong>, with a <strong>7-day free trial</strong> for new subscribers. You can cancel any time through Apple subscriptions.</p>
 
-    <h3>What does Bodhi Tree do with my data?</h3>
-    <p>Nothing. We do not have a server that receives your data. There are no analytics SDKs, no advertising trackers, and no third-party telemetry. Reflections, bookmarks, journal entries, and meditation history are stored on your device. If you turn on iCloud sync, they are mirrored to your own iCloud key-value store, managed by Apple — we never see them.</p>
-    <p>The full details are in our <a href="../privacy/">Privacy Policy</a>.</p>
+      <h3 id="dana">What is the Dana scholarship?</h3>
+      <p>Dana is the Buddhist practice of generosity. If subscription cost is a real barrier, Bodhi Tree includes a local Dana scholarship path that can unlock Premium for one year without a purchase. Open <strong>You → Premium → Dana Scholarship</strong> and follow the prompts.</p>
+      <p>The grant is stored locally on your device. We do not receive a scholarship application or proof of need.</p>
 
-    <h3>How do I delete my data?</h3>
-    <p>Because Bodhi Tree stores everything on your device:</p>
-    <ul>
-      <li>To delete your reflections, bookmarks, or journal entries, do so inside the app.</li>
-      <li>To delete everything, uninstall the app. iOS will purge the app's sandbox.</li>
-      <li>To remove iCloud-synced copies, <strong>iOS Settings → [your name] → iCloud → Manage Account Storage</strong> and find Bodhi Tree, or simply uninstall on every device that had sync on.</li>
-    </ul>
+      <h3 id="privacy">What does Bodhi Tree do with my data?</h3>
+      <p>Bodhi Tree has no accounts, analytics SDKs, advertising trackers, or developer-operated user-data server. Reflections, bookmarks, journal entries, meditation history, and reading progress are stored on your device. If you choose iCloud sync, supported items are mirrored through your own Apple iCloud account.</p>
+      <p>Full details are available in the <a href="../privacy/">Privacy Policy</a>.</p>
 
-    <h3>What iOS versions are supported?</h3>
-    <p>iOS 17.0 and later. Bodhi Tree is iPhone-only at this time.</p>
+      <h3 id="delete-data">How do I delete my data?</h3>
+      <ul>
+        <li>Delete individual bookmarks, journal entries, or reflections inside the app where those controls are available.</li>
+        <li>Delete the app to remove its local app sandbox from the device.</li>
+        <li>Manage Apple-controlled iCloud copies through your iCloud settings if you used sync.</li>
+        <li>Email <a href="mailto:support@bodhitree.app">support@bodhitree.app</a> if you want a support email thread deleted.</li>
+      </ul>
 
-    <h3>I found a bug / I have a feature request</h3>
-    <p>We'd love to hear it. Email <a href="mailto:support@bodhitree.app">support@bodhitree.app</a> with what you saw and what you expected. Screenshots are very welcome.</p>
+      <h3 id="versions">What iOS versions are supported?</h3>
+      <p>Bodhi Tree supports iOS 17.0 and later, and is currently designed for iPhone.</p>
 
-    <h3>Where do the sutra translations come from?</h3>
-    <p>The bundled translations are public-domain English renderings or our own translations from public-domain source texts. Specific translator credits are listed inside each sutra's "About this translation" panel.</p>
+      <h3 id="translations">Where do the sutra translations come from?</h3>
+      <p>The bundled translations are public-domain English renderings or Bodhi Tree translations from public-domain source texts. Translator and source notes are listed inside the app where available.</p>
 
-    <h3>I want to send feedback that isn't a support request</h3>
-    <p>Same address: <a href="mailto:support@bodhitree.app">support@bodhitree.app</a>. We read every message.</p>
+      <h3 id="bugs">I found a bug or have a feature request.</h3>
+      <p>Email <a href="mailto:support@bodhitree.app">support@bodhitree.app</a> with what you saw, what you expected, and the steps that reproduce the issue if you know them.</p>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="site-footer-inner">
       <span>© 2026 Bodhi Tree</span>
       <span>
-        <a href="../privacy/">Privacy</a> &nbsp;·&nbsp;
-        <a href="../support/">Support</a> &nbsp;·&nbsp;
+        <a href="../privacy/">Privacy</a> ·
+        <a href="../support/">Support</a> ·
         <a href="mailto:support@bodhitree.app">Contact</a>
       </span>
     </div>
